@@ -12,13 +12,13 @@ export default function Register() {
     <SafeAreaProvider style={styles.container}>
       <View style={{ paddingTop: insets.top }}>
         <Text>First Name</Text>
-        <TextInput style={styles.input} placeholder="Name" />
-        <Text>Email Address</Text>
-        <TextInput style={styles.input} placeholder="Email" />
-        <Text>First Name</Text>
-        <TextInput style={styles.input} placeholder="Name" />
-        <Text>Email Address</Text>
-        <TextInput style={styles.input} placeholder="Email" />
+        <TextInput style={styles.input} placeholder="John" />
+        <Text>Last Name</Text>
+        <TextInput style={styles.input} placeholder="Doe" />
+        <Text>Phone number</Text>
+        <TextInput style={styles.input} placeholder="67563412" />
+        <Text>DOB</Text>
+        <TextInput style={styles.input} placeholder="DOB" />
         <Text>Email Address</Text>
         <TextInput style={styles.input} placeholder="Email" />
         <Text>Password</Text>
