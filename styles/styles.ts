@@ -5,6 +5,13 @@ export const styles = StyleSheet.create({
     flex: 1,
     padding: 16,
     justifyContent: "center",
+   
+  },
+  container2: {
+    flex: 1,
+    padding: 16,
+    justifyContent: "flex-start",
+   
   },
   input: {
     height: 50,
@@ -19,7 +26,7 @@ export const styles = StyleSheet.create({
    
   },
   button: {
-    backgroundColor: "green",
+    backgroundColor: "#4FA64F",
     borderRadius: 8,
     paddingVertical: 10,
     alignItems: "center",
@@ -30,7 +37,7 @@ export const styles = StyleSheet.create({
   buttonText: {
     color: "#fff",
     fontWeight: "bold",
-    fontSize: 16,
+    fontSize: 20,
   },
   error: {
     color: "red",

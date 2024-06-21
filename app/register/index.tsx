@@ -11,6 +11,10 @@ export default function Register() {
   return (
     <SafeAreaProvider style={styles.container}>
       <View style={{ paddingTop: insets.top }}>
+      <Text style={{ fontSize: 28 }}>Create an account.</Text>
+        <Text style={{ fontSize: 16, marginBottom: 20 }}>
+          Welcome! Please enter your details
+        </Text>
         <Text>First Name</Text>
         <TextInput style={styles.input} placeholder="John" />
         <Text>Last Name</Text>
