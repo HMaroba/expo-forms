@@ -1,48 +1,38 @@
+import { styles } from "@/styles/styles";
 import React from "react";
-import { View, TextInput } from "react-native";
+import { View, TextInput, Text, TouchableOpacity } from "react-native";
 import { StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function Register() {
+  const insets = useSafeAreaInsets();
   return (
-    <View style={styles.container}>
-      <TextInput style={styles.input} placeholder="Name" />
-      <TextInput style={styles.input} placeholder="Email" />
-      <TextInput style={styles.input} placeholder="Password" secureTextEntry />
-    </View>
+    <SafeAreaProvider style={styles.container}>
+      <View style={{ paddingTop: insets.top }}>
+        <Text>First Name</Text>
+        <TextInput style={styles.input} placeholder="Name" />
+        <Text>Email Address</Text>
+        <TextInput style={styles.input} placeholder="Email" />
+        <Text>First Name</Text>
+        <TextInput style={styles.input} placeholder="Name" />
+        <Text>Email Address</Text>
+        <TextInput style={styles.input} placeholder="Email" />
+        <Text>First Name</Text>
+        <TextInput style={styles.input} placeholder="Name" />
+        <Text>Email Address</Text>
+        <TextInput style={styles.input} placeholder="Email" />
+        <Text>Password</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Password"
+          secureTextEntry
+        />
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Submit</Text>
+        </TouchableOpacity>
+      </View>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 16,
-    justifyContent: "center",
-  },
-  input: {
-    height: 60,
-    borderColor: "#ccc",
-    borderWidth: 1,
-    marginBottom: 12,
-    paddingHorizontal: 10,
-    borderRadius: 8,
-    fontSize: 16,
-  },
-  button: {
-    backgroundColor: "green",
-    borderRadius: 8,
-    paddingVertical: 10,
-    alignItems: "center",
-    marginTop: 16,
-    marginBottom: 12,
-  },
-  buttonText: {
-    color: "#fff",
-    fontWeight: "bold",
-    fontSize: 16,
-  },
-  error: {
-    color: "red",
-    fontSize: 20,
-    marginBottom: 12,
-  },
-});
