@@ -7,7 +7,7 @@ export default function Layout() {
         headerStyle: {
           backgroundColor: "#f4511e",
         },
-        headerShown: false,
+        headerShown: true,
 
         headerTintColor: "#fff",
         headerTitleStyle: {
@@ -15,10 +15,10 @@ export default function Layout() {
         },
       }}
     >
-      {/* <Stack.Screen
+      <Stack.Screen
         name="register"
         options={{ headerShown: true, title: "Create Account" }}
-      /> */}
+      />
     </Stack>
   );
 }
