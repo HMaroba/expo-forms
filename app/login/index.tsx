@@ -1,5 +1,5 @@
 import { styles } from "@/styles/styles";
-import { Link } from "expo-router";
+import { Link, router } from "expo-router";
 import React from "react";
 import { View, TextInput, Text, TouchableOpacity } from "react-native";
 import { StyleSheet } from "react-native";
@@ -9,6 +9,9 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function Register() {
   const insets = useSafeAreaInsets();
+  const login = () => {
+    router.push("/screens/dashboard");
+  };
   return (
     <SafeAreaProvider style={styles.container2}>
       <View style={{ paddingTop: insets.top }}>
@@ -30,7 +33,7 @@ export default function Register() {
             Forgot Password
           </Link>
         </View>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => login()}>
           <Text style={styles.buttonText}>Submit</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
