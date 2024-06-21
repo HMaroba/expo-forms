@@ -4,21 +4,25 @@ export default function Layout() {
   return (
     <Stack
       screenOptions={{
+        headerShadowVisible: false,
         headerStyle: {
-          backgroundColor: "#f4511e",
+          backgroundColor: "white",
         },
-        headerShown: false,
-
-        headerTintColor: "#fff",
+        headerTintColor: "black",
         headerTitleStyle: {
-          fontWeight: "bold",
+          fontWeight: "500",
+          fontSize: 22,
         },
+        headerTitleAlign: "center",
+        headerShown: true,
       }}
     >
-      {/* <Stack.Screen
-        name="register"
-        options={{ headerShown: true, title: "Create Account" }}
-      /> */}
+      <Stack.Screen
+        name="index"
+        options={{
+          headerTitle: "Create Account",
+        }}
+      />
     </Stack>
   );
 }

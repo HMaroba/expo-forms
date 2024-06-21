@@ -1,24 +1,23 @@
 import { Stack } from "expo-router";
+import "../global.css"
 
 export default function Layout() {
   return (
     <Stack
       screenOptions={{
         headerStyle: {
-          backgroundColor: "#f4511e",
+          backgroundColor: "white",
         },
-        headerShown: true,
-
-        headerTintColor: "#fff",
+        headerTintColor: "black",
         headerTitleStyle: {
           fontWeight: "bold",
+          fontSize: 22,
         },
+        headerTitleAlign: "center",
+        headerShown: false,
       }}
-    >
-      <Stack.Screen
-        name="register"
-        options={{ headerShown: true, title: "Create Account" }}
-      />
-    </Stack>
+    ></Stack>
+
+    
   );
 }
