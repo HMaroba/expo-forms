@@ -16,7 +16,15 @@ export default function Register() {
           My Transactions
         </Text>
 
-        <View style={{flexDirection: 'row', width: '100%', justifyContent: 'space-between'}}>
+        <Text style={{ fontSize: 24, fontWeight: 500 }}>LSL 2500</Text>
+
+        <View
+          style={{
+            flexDirection: "row",
+            width: "100%",
+            justifyContent: "space-between",
+          }}
+        >
           <TouchableOpacity
             style={{
               marginTop: 10,
@@ -24,11 +32,15 @@ export default function Register() {
               height: 70,
               width: "45%",
               borderWidth: 2,
-              borderRadius: 5
+              borderRadius: 5,
+              borderColor: "green",
+              backgroundColor: "green",
             }}
           >
+            <Text style={{ fontSize: 28, fontWeight: 400, color: "white" }}>
+              5600
+            </Text>
             <Text>Received</Text>
-            <Text>5600</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
@@ -37,11 +49,13 @@ export default function Register() {
               height: 70,
               width: "45%",
               borderWidth: 2,
-              borderRadius: 5
+              borderRadius: 5,
             }}
           >
+            <Text style={{ fontSize: 28, fontWeight: 400}}>
+              5600
+            </Text>
             <Text>Paid</Text>
-            <Text>5600</Text>
           </TouchableOpacity>
         </View>
       </View>
