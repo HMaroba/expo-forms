@@ -22,7 +22,7 @@ export default function SecondRow() {
         paddingTop: 20,
       }}
     >
-           <TouchableOpacity
+      <TouchableOpacity
         onPress={() => sendMoney()}
         style={{
           backgroundColor: "green",
@@ -33,11 +33,11 @@ export default function SecondRow() {
           alignItems: "center",
         }}
       >
-       
         <FontAwesome5 name="money-check" size={30} color="white" />
-        <Text style={{color: 'white', fontSize: 14}}>Loans</Text>
+        <Text style={{ color: "white", fontSize: 14 }}>Loans</Text>
       </TouchableOpacity>
-      <View
+      <TouchableOpacity
+        onPress={() => sendMoney()}
         style={{
           backgroundColor: "green",
           width: "25%",
@@ -48,8 +48,8 @@ export default function SecondRow() {
         }}
       >
         <FontAwesome5 name="wallet" size={30} color="white" />
-        <Text style={{color: 'white', fontSize: 14}}>Savings</Text>
-      </View>
+        <Text style={{ color: "white", fontSize: 14 }}>Savings</Text>
+      </TouchableOpacity>
       <TouchableOpacity
         onPress={() => login()}
         style={{
@@ -62,7 +62,7 @@ export default function SecondRow() {
         }}
       >
         <FontAwesome5 name="user" size={30} color="white" />
-        <Text style={{color: 'white', fontSize: 14}}>Profile</Text>
+        <Text style={{ color: "white", fontSize: 14 }}>Profile</Text>
         {/* <Text>Send Money</Text> */}
       </TouchableOpacity>
     </View>
