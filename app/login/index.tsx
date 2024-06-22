@@ -29,7 +29,7 @@ export default function Register() {
           placeholder="Enter your phone"
           keyboardType="name-phone-pad"
         />
-        <Text>Password</Text>
+        <Text>Password *</Text>
         <TextInput
           style={styles.input}
           placeholder="Password"

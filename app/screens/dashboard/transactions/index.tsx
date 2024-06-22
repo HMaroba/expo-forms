@@ -83,7 +83,7 @@ export default function Register() {
             <Text style={{ fontSize: 24, fontWeight: 400, color: "white" }}>
               LSL 5600.00
             </Text>
-            <Text>Received</Text>
+            <Text style={{color: 'white'}}>Received</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
@@ -100,7 +100,7 @@ export default function Register() {
             <Text style={{ fontSize: 24, fontWeight: 400, color: "white" }}>
               LSL 600.00
             </Text>
-            <Text>Paid</Text>
+            <Text style={{color: 'white'}}>Paid</Text>
           </TouchableOpacity>
         </View>
 
