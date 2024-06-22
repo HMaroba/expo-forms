@@ -12,6 +12,10 @@ export default function Register() {
   const login = () => {
     router.push("/screens/dashboard");
   };
+
+  const register = () => {
+    router.push("/register");
+  };
   return (
     <SafeAreaProvider style={styles.container2}>
       <View style={{ paddingTop: insets.top }}>
@@ -40,8 +44,8 @@ export default function Register() {
         <TouchableOpacity style={styles.button} onPress={() => login()}>
           <Text style={styles.buttonText}>Submit</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Log in with Google</Text>
+        <TouchableOpacity style={styles.button} onPress={() => register()}>
+          <Text style={styles.buttonText}>Register</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaProvider>

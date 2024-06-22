@@ -32,9 +32,7 @@ import React from "react";
 import { Text, View, TouchableOpacity } from "react-native";
 
 export default function HomePage() {
-  const register = () => {
-    router.push("/register");
-  };
+
 
   const login = () => {
     router.push("/login");
@@ -47,6 +45,14 @@ export default function HomePage() {
           Welcome
         </Text>
       </View>
+
+      <Text style={{ fontSize: 34, fontWeight: 400, textAlign: "center" }}>
+        Everything you need to run your business
+      </Text>
+      <Text style={{fontSize: 20, textAlign: 'center', paddingTop: 20}}>
+        This banking app offers you seemlesy transaction everthing is in our app
+        you are more welcome to join us now
+      </Text>
       <View style={{ paddingBottom: 20 }}>
         <Link
           href="/register"
@@ -55,11 +61,11 @@ export default function HomePage() {
           -
         </Link>
         <TouchableOpacity style={styles.button} onPress={login}>
-          <Text style={styles.buttonText}>Login</Text>
+          <Text style={styles.buttonText}>Get Started</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={register}>
+        {/* <TouchableOpacity style={styles.button} onPress={register}>
           <Text style={styles.buttonText}>Register</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
     </View>
   );

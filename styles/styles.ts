@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 16,
     marginBottom: 12,
-    height: 50,
+    height: 55,
   },
   buttonText: {
     color: "#fff",
