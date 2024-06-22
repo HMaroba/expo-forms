@@ -80,8 +80,8 @@ export default function Register() {
               backgroundColor: "#4FA64F",
             }}
           >
-            <Text style={{ fontSize: 28, fontWeight: 400, color: "white" }}>
-              5600
+            <Text style={{ fontSize: 24, fontWeight: 400, color: "white" }}>
+              LSL 5600.00
             </Text>
             <Text>Received</Text>
           </TouchableOpacity>
@@ -97,8 +97,8 @@ export default function Register() {
               backgroundColor: "#4FA64F",
             }}
           >
-            <Text style={{ fontSize: 28, fontWeight: 400, color: "white" }}>
-              600
+            <Text style={{ fontSize: 24, fontWeight: 400, color: "white" }}>
+              LSL 600.00
             </Text>
             <Text>Paid</Text>
           </TouchableOpacity>
@@ -115,8 +115,8 @@ export default function Register() {
                 key={index}
                 style={{
                   borderWidth: 2,
-                  borderColor: "gray",
-                  borderRadius: 10,
+                  borderColor: "green",
+                  borderRadius: 5,
                   marginTop: 10,
                   padding: 5,
                   flexDirection: 'row'
@@ -124,10 +124,11 @@ export default function Register() {
               >
                 <View>
                   <Text style={{ fontSize: 18 }}>{item.name}</Text>
+                  <Text style={{ fontSize: 18 }}>{item.type}</Text>
                 </View>
                 <View style={{marginLeft: 'auto'}}>
-                  <Text style={{ fontSize: 18 }}>{item.amount}</Text>
-                  <Text style={{ fontSize: 18 }}>{item.type}</Text>
+                  <Text style={{ fontSize: 18, fontWeight: 600 }}>LSL {item.amount}</Text>
+               
                 </View>
               </View>
             ))}

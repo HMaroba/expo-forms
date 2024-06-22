@@ -40,19 +40,31 @@ export default function Dashboard() {
           <SecondRow />
         </View>
 
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Send Money</Text>
-        </TouchableOpacity>
-        {/* <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Withdraw</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Payments</Text>
-        </TouchableOpacity> */}
-        <TouchableOpacity style={styles.button} onPress={() => login()}>
-          <Text style={styles.buttonText}>Transactions</Text>
-        </TouchableOpacity>
+        <View style={{ flexDirection: "row" , marginTop: 32}}>
+          <Text style={{ fontSize: 18 }}>Yesterday</Text>
+          <Link
+            href={"/screen/dashboard/transactions"}
+            style={{ marginLeft: "auto", fontSize: 18, color: "blue" }}
+          >
+            Sell All
+          </Link>
+        </View>
+        <View
+          style={{
+            flexDirection: "row",
+            marginTop: 10,
+            borderColor: "green",
+            borderWidth: 2,
+            borderRadius: 5,
+            padding: 10,
+          }}
+        >
+        <View>
+        <Text style={{ fontSize: 16 }}>Hlalele</Text>
+        <Text style={{ fontSize: 16 }}>20 May 2024</Text>
+        </View>
+          <Text style={{ fontSize: 16, marginLeft: "auto", fontWeight: 600 }}>LSL 200.99</Text>
+        </View>
       </View>
     </SafeAreaProvider>
   );
