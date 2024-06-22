@@ -22,8 +22,8 @@ export default function CardInfo({ iconName, title }: IconProps) {
         alignItems: "center",
       }}
     >
-      <IconComponent name={iconName} size={40} color="white" />
-      <Text style={{ color: "white", fontSize: 17 , paddingTop: 2}}>{title}</Text>
+      <IconComponent name={iconName} size={30} color="white" />
+      <Text style={{ color: "white", fontSize: 14 , paddingTop: 2}}>{title}</Text>
     </View>
   );
 }

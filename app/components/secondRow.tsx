@@ -27,8 +27,8 @@ export default function SecondRow() {
         }}
       >
        
-        <FontAwesome5 name="money-check" size={40} color="white" />
-        <Text style={{color: 'white', fontSize: 17}}>Loans</Text>
+        <FontAwesome5 name="money-check" size={30} color="white" />
+        <Text style={{color: 'white', fontSize: 14}}>Loans</Text>
       </View>
       <View
         style={{
@@ -40,8 +40,8 @@ export default function SecondRow() {
           alignItems: "center",
         }}
       >
-        <FontAwesome5 name="wallet" size={40} color="white" />
-        <Text style={{color: 'white', fontSize: 17}}>Savings</Text>
+        <FontAwesome5 name="wallet" size={30} color="white" />
+        <Text style={{color: 'white', fontSize: 14}}>Savings</Text>
       </View>
       <TouchableOpacity
         onPress={() => login()}
@@ -54,8 +54,8 @@ export default function SecondRow() {
           alignItems: "center",
         }}
       >
-        <FontAwesome5 name="user" size={40} color="white" />
-        <Text style={{color: 'white', fontSize: 17}}>Profile</Text>
+        <FontAwesome5 name="user" size={30} color="white" />
+        <Text style={{color: 'white', fontSize: 14}}>Profile</Text>
         {/* <Text>Send Money</Text> */}
       </TouchableOpacity>
     </View>
