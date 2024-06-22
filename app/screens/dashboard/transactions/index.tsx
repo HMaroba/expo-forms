@@ -34,11 +34,11 @@ export default function Register() {
   return (
     <SafeAreaProvider style={styles.container2}>
       <View style={{ paddingTop: insets.top }}>
-        <Text style={{ fontSize: 28, fontWeight: 500, color: "green" }}>
-          Balance
+        <Text style={{ fontSize: 16, fontWeight: 500, color: "green" }}>
+         Available Balance
         </Text>
 
-        <Text style={{ fontSize: 24, fontWeight: 500 }}>LSL 2500</Text>
+        <Text style={{ fontSize: 24, fontWeight: 500 }}>M 2500.00</Text>
 
         <View
           style={{
@@ -56,8 +56,8 @@ export default function Register() {
               width: "45%",
               borderWidth: 2,
               borderRadius: 5,
-              borderColor: "green",
-              backgroundColor: "green",
+              borderColor: "4FA64F",
+              backgroundColor: "4FA64F",
             }}
           >
             <Text style={{ fontSize: 28, fontWeight: 400, color: "white" }}>
@@ -73,6 +73,8 @@ export default function Register() {
               width: "45%",
               borderWidth: 2,
               borderRadius: 5,
+              backgroundColor: '#FFFDD0',
+              borderColor: '#FFFDD0'
             }}
           >
             <Text style={{ fontSize: 28, fontWeight: 400}}>
