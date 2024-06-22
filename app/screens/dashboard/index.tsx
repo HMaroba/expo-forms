@@ -9,6 +9,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Feather from "@expo/vector-icons/Feather";
 import EvilIcons from '@expo/vector-icons/EvilIcons';
 import CardInfo from "@/app/components/card";
+import SecondRow from "@/app/components/secondRow";
 
 export default function Dashboard() {
   const insets = useSafeAreaInsets();
@@ -33,42 +34,8 @@ export default function Dashboard() {
             <CardInfo />
             <CardInfo />
           </View>
-          <View
-            style={{
-              flexDirection: "row",
-              justifyContent: "space-between",
-              paddingTop: 20,
-            }}
-          >
-            <View
-              style={{
-                backgroundColor: "green",
-                width: "25%",
-                height: 75,
-                borderRadius: 10,
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <EvilIcons name="credit-card" size={55} color="white" />
-            </View>
-            <View
-              style={{
-                backgroundColor: "green",
-                width: "25%",
-                height: 70,
-                borderRadius: 10,
-              }}
-            ></View>
-            <View
-              style={{
-                backgroundColor: "green",
-                width: "25%",
-                height: 70,
-                borderRadius: 10,
-              }}
-            ></View>
-          </View>
+    
+          <SecondRow />
         </View>
 
         <TouchableOpacity style={styles.button}>
