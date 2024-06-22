@@ -1,7 +1,7 @@
 import { styles } from "@/styles/styles";
 import { Link } from "expo-router";
 import React from "react";
-import { View, TextInput, Text, TouchableOpacity } from "react-native";
+import { View, TextInput, Text, TouchableOpacity, ScrollView } from "react-native";
 import { StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { SafeAreaProvider } from "react-native-safe-area-context";
@@ -19,6 +19,26 @@ export default function Register() {
       name: "Hlalele",
       amount: 560,
       type: "received",
+    },
+    {
+      name: "Maroba",
+      amount: 1000,
+      type: "sent",
+    },
+    {
+      name: "Maroba",
+      amount: 1000,
+      type: "sent",
+    },
+    {
+      name: "Maroba",
+      amount: 1000,
+      type: "sent",
+    },
+    {
+      name: "Maroba",
+      amount: 1000,
+      type: "sent",
     },
     {
       name: "Maroba",
@@ -88,16 +108,31 @@ export default function Register() {
           <Text style={{ fontSize: 20, paddingTop: 10 }}>
             Recent Transactions
           </Text>
-
+          <ScrollView style={{marginBottom: 100, height: 450}}>
           <View>
             {TRansactions.map((item: any, index: number) => (
-              <View key={index}>
-                <Text>{item.name}</Text>
-                <Text>{item.amount}</Text>
-                <Text>{item.type}</Text>
+              <View
+                key={index}
+                style={{
+                  borderWidth: 2,
+                  borderColor: "gray",
+                  borderRadius: 10,
+                  marginTop: 10,
+                  padding: 5,
+                  flexDirection: 'row'
+                }}
+              >
+                <View>
+                  <Text style={{ fontSize: 18 }}>{item.name}</Text>
+                </View>
+                <View style={{marginLeft: 'auto'}}>
+                  <Text style={{ fontSize: 18 }}>{item.amount}</Text>
+                  <Text style={{ fontSize: 18 }}>{item.type}</Text>
+                </View>
               </View>
             ))}
           </View>
+          </ScrollView>
         </View>
       </View>
     </SafeAreaProvider>
