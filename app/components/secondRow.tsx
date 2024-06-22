@@ -37,7 +37,7 @@ export default function SecondRow() {
         <Text style={{ color: "white", fontSize: 14 }}>Loans</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => sendMoney()}
+        onPress={() => withdrawMoney()}
         style={{
           backgroundColor: "green",
           width: "25%",
