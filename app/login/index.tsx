@@ -19,8 +19,12 @@ export default function Register() {
         <Text style={{ fontSize: 16, marginBottom: 20 }}>
           Welcome back please enter your details
         </Text>
-        <Text>Email Address</Text>
-        <TextInput style={styles.input} placeholder="Enter your email" />
+        <Text>Phone number *</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Enter your phone"
+          keyboardType="name-phone-pad"
+        />
         <Text>Password</Text>
         <TextInput
           style={styles.input}
