@@ -1,13 +1,16 @@
+import { Ionicons } from "@expo/vector-icons";
 import Feather from "@expo/vector-icons/Feather";
 import React from "react";
 import { View, Text } from "react-native";
 
 type IconProps = {
-  icons?: any;
+  iconName?: any;
   title: string;
 };
 
-export default function CardInfo({ icons, title }: IconProps) {
+export default function CardInfo({ iconName, title }: IconProps) {
+
+    const IconComponent = Ionicons;
   return (
     <View
       style={{
@@ -19,7 +22,7 @@ export default function CardInfo({ icons, title }: IconProps) {
         alignItems: "center",
       }}
     >
-      <Feather name="home" size={40} color="white" />
+      <IconComponent name={iconName} size={40} color="white" />
       <Text style={{ color: "white", fontSize: 17 , paddingTop: 2}}>{title}</Text>
     </View>
   );
