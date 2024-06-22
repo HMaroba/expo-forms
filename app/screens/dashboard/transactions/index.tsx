@@ -11,31 +11,31 @@ export default function Register() {
   const insets = useSafeAreaInsets();
   const TRansactions = [
     {
-      name : 'Hlalele',
-      amount : 560,
-      type : 'received'
+      name: "Hlalele",
+      amount: 560,
+      type: "received",
     },
     {
-      name : 'Hlalele',
-      amount : 560,
-      type : 'received'
+      name: "Hlalele",
+      amount: 560,
+      type: "received",
     },
     {
-      name : 'Maroba',
-      amount : 1000,
-      type : 'sent'
+      name: "Maroba",
+      amount: 1000,
+      type: "sent",
     },
     {
-      name : 'Hlalele',
-      amount : 560,
-      type : 'received'
-    }
-  ]
+      name: "Hlalele",
+      amount: 560,
+      type: "received",
+    },
+  ];
   return (
     <SafeAreaProvider style={styles.container2}>
       <View style={{ paddingTop: insets.top }}>
         <Text style={{ fontSize: 16, fontWeight: 500, color: "green" }}>
-         Available Balance
+          Available Balance
         </Text>
 
         <Text style={{ fontSize: 24, fontWeight: 500 }}>M 2500.00</Text>
@@ -55,9 +55,9 @@ export default function Register() {
               height: 70,
               width: "45%",
               borderWidth: 2,
-              borderRadius: 5,
-              borderColor: "4FA64F",
-              backgroundColor: "4FA64F",
+              borderRadius: 10,
+              borderColor: "#4FA64F",
+              backgroundColor: "#4FA64F",
             }}
           >
             <Text style={{ fontSize: 28, fontWeight: 400, color: "white" }}>
@@ -72,16 +72,32 @@ export default function Register() {
               height: 70,
               width: "45%",
               borderWidth: 2,
-              borderRadius: 5,
-              backgroundColor: '#FFFDD0',
-              borderColor: '#FFFDD0'
+              borderRadius: 10,
+              borderColor: "#4FA64F",
+              backgroundColor: "#4FA64F",
             }}
           >
-            <Text style={{ fontSize: 28, fontWeight: 400}}>
-              5600
+            <Text style={{ fontSize: 28, fontWeight: 400, color: "white" }}>
+              600
             </Text>
             <Text>Paid</Text>
           </TouchableOpacity>
+        </View>
+
+        <View>
+          <Text style={{ fontSize: 20, paddingTop: 10 }}>
+            Recent Transactions
+          </Text>
+
+          <View>
+            {TRansactions.map((item: any, index: number) => (
+              <View key={index}>
+                <Text>{item.name}</Text>
+                <Text>{item.amount}</Text>
+                <Text>{item.type}</Text>
+              </View>
+            ))}
+          </View>
         </View>
       </View>
     </SafeAreaProvider>
