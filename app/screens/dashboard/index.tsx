@@ -6,7 +6,9 @@ import { StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import Feather from '@expo/vector-icons/Feather';
+import Feather from "@expo/vector-icons/Feather";
+import EvilIcons from '@expo/vector-icons/EvilIcons';
+import CardInfo from "@/app/components/card";
 
 export default function Dashboard() {
   const insets = useSafeAreaInsets();
@@ -24,45 +26,32 @@ export default function Dashboard() {
         </Text>
 
         <View style={{ flexDirection: "column" }}>
-          <View style={{ flexDirection: "row", justifyContent: 'space-between' }}>
+          <View
+            style={{ flexDirection: "row", justifyContent: "space-between" }}
+          >
+            <CardInfo />
+            <CardInfo />
+            <CardInfo />
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              paddingTop: 20,
+            }}
+          >
             <View
               style={{
                 backgroundColor: "green",
                 width: "25%",
                 height: 75,
                 borderRadius: 10,
-                justifyContent: 'center',
-                alignItems: 'center'
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
-              <Feather name="home" size={40} color="white" />
+              <EvilIcons name="credit-card" size={55} color="white" />
             </View>
-            <View
-              style={{
-                backgroundColor: "green",
-                width: "25%",
-                height: 70,
-                borderRadius: 10,
-              }}
-            ></View>
-            <View
-              style={{
-                backgroundColor: "green",
-                width: "25%",
-                height: 70,
-                borderRadius: 10,
-              }}
-            ></View>
-          </View>
-          <View style={{ flexDirection: "row", justifyContent: 'space-between', paddingTop: 20 }}>
-            <View
-              style={{
-                backgroundColor: "green",
-                width: "25%",
-                height: 70,
-                borderRadius: 10,
-              }}
-            ></View>
             <View
               style={{
                 backgroundColor: "green",
