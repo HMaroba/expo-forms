@@ -14,7 +14,7 @@ export default function Layout() {
           fontSize: 22,
         },
         headerTitleAlign: "center",
-        headerShown: true,
+        headerShown: false,
       }}
     >
       <Stack.Screen

@@ -9,11 +9,33 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function Register() {
   const insets = useSafeAreaInsets();
+  const TRansactions = [
+    {
+      name : 'Hlalele',
+      amount : 560,
+      type : 'received'
+    },
+    {
+      name : 'Hlalele',
+      amount : 560,
+      type : 'received'
+    },
+    {
+      name : 'Maroba',
+      amount : 1000,
+      type : 'sent'
+    },
+    {
+      name : 'Hlalele',
+      amount : 560,
+      type : 'received'
+    }
+  ]
   return (
     <SafeAreaProvider style={styles.container2}>
       <View style={{ paddingTop: insets.top }}>
         <Text style={{ fontSize: 28, fontWeight: 500, color: "green" }}>
-          My Transactions
+          Balance
         </Text>
 
         <Text style={{ fontSize: 24, fontWeight: 500 }}>LSL 2500</Text>
@@ -23,6 +45,7 @@ export default function Register() {
             flexDirection: "row",
             width: "100%",
             justifyContent: "space-between",
+            marginTop: 20,
           }}
         >
           <TouchableOpacity

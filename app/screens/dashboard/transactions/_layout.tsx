@@ -14,13 +14,13 @@ export default function Layout() {
           fontSize: 22,
         },
         headerTitleAlign: "center",
-        headerShown: false,
+        headerShown: true,
       }}
     >
       <Stack.Screen
         name="index"
         options={{
-          headerTitle: "Transactions",
+          headerTitle: "Transactions History",
         }}
       />
     </Stack>
