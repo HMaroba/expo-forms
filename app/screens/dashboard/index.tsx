@@ -30,9 +30,9 @@ export default function Dashboard() {
           <View
             style={{ flexDirection: "row", justifyContent: "space-between" }}
           >
-            <CardInfo />
-            <CardInfo />
-            <CardInfo />
+            <CardInfo title="Send"/>
+            <CardInfo title="Withdraw" />
+            <CardInfo title="Pay" />
           </View>
     
           <SecondRow />
@@ -41,13 +41,13 @@ export default function Dashboard() {
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Send Money</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        {/* <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Withdraw</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Payments</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <TouchableOpacity style={styles.button} onPress={() => login()}>
           <Text style={styles.buttonText}>Transactions</Text>
         </TouchableOpacity>

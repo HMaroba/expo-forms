@@ -1,12 +1,13 @@
 import Feather from "@expo/vector-icons/Feather";
 import React from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 
 type IconProps = {
   icons?: any;
+  title: string;
 };
 
-export default function CardInfo({ icons }: IconProps) {
+export default function CardInfo({ icons, title }: IconProps) {
   return (
     <View
       style={{
@@ -19,6 +20,7 @@ export default function CardInfo({ icons }: IconProps) {
       }}
     >
       <Feather name="home" size={40} color="white" />
+      <Text style={{ color: "white", fontSize: 17 , paddingTop: 2}}>{title}</Text>
     </View>
   );
 }
