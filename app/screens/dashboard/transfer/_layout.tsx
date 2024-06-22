@@ -20,7 +20,7 @@ export default function Layout() {
       <Stack.Screen
         name="index"
         options={{
-          headerTitle: "Sign in",
+          headerTitle: "Transfer",
         }}
       />
     </Stack>

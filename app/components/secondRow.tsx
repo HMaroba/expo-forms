@@ -8,6 +8,9 @@ export default function SecondRow() {
   const login = () => {
     router.push("/screens/dashboard/transactions");
   };
+  const sendMoney = () => {
+    router.push("/screens/dashboard/transfer");
+  };
   return (
     <View
       style={{
@@ -16,7 +19,8 @@ export default function SecondRow() {
         paddingTop: 20,
       }}
     >
-      <View
+           <TouchableOpacity
+        onPress={() => sendMoney()}
         style={{
           backgroundColor: "green",
           width: "25%",
@@ -29,7 +33,7 @@ export default function SecondRow() {
        
         <FontAwesome5 name="money-check" size={30} color="white" />
         <Text style={{color: 'white', fontSize: 14}}>Loans</Text>
-      </View>
+      </TouchableOpacity>
       <View
         style={{
           backgroundColor: "green",

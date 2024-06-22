@@ -10,32 +10,23 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 export default function Register() {
   const insets = useSafeAreaInsets();
   return (
-    <SafeAreaProvider style={styles.container2}>
+    <SafeAreaProvider style={styles.container}>
       <View style={{ paddingTop: insets.top }}>
-        <Text style={{ fontSize: 28 }}>Log in to your account.</Text>
-        <Text style={{ fontSize: 16, marginBottom: 20 }}>
-          Welcome back please enter your details
-        </Text>
-        <Text>Email Address</Text>
-        <TextInput style={styles.input} placeholder="Enter your email" />
-        <Text>Password</Text>
+   
+        <Text>Phone Number *</Text>
+        <TextInput style={styles.input} placeholder="56781234" keyboardType='number-pad' />
+        <Text>Amount *</Text>
         <TextInput
           style={styles.input}
-          placeholder="Password"
-          secureTextEntry
+          placeholder="Amount"
+          keyboardType='number-pad'
+       
         />
-        <View style={{ flexDirection: "row", marginTop: 20 }}>
-          <Text>Remember Me for 30 days</Text>
-          <Link href={"/"} style={{ marginLeft: "auto" }}>
-            Forgot Password
-          </Link>
-        </View>
+   
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Submit</Text>
+          <Text style={styles.buttonText}>Send</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Log in with Google</Text>
-        </TouchableOpacity>
+  
       </View>
     </SafeAreaProvider>
   );
