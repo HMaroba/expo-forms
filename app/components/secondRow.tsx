@@ -11,6 +11,9 @@ export default function SecondRow() {
   const sendMoney = () => {
     router.push("/screens/dashboard/transfer");
   };
+  const withdrawMoney = () => {
+    router.push("/screens/dashboard/withdraw");
+  };
   return (
     <View
       style={{
