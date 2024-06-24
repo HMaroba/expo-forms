@@ -36,7 +36,7 @@ export default function HomePage() {
     router.push("/login");
   };
 
-  //const image = {uri: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fsimple-green-background&psig=AOvVaw0o12enrqFzPMOvgSULZC2O&ust=1719331745046000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDu_oXQ9IYDFQAAAAAdAAAAABAE'};
+  //const image = {uri: 'https://static.vecteezy.com/system/resources/previews/010/945/926/non_2x/green-background-simple-flat-full-of-dimensional-lines-free-vector.jpg'};
   const image = { uri: "https://docs.expo.dev/static/images/tutorial/background-image.png" };
   return (
     <View style={styles.container3}>
