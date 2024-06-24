@@ -6,6 +6,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import CardInfo from "@/app/components/card";
 import SecondRow from "@/app/components/secondRow";
 import BalanceComponent from "@/app/components/balance";
+import OutlineCardInfo from "@/app/components/oulineCard";
 
 export default function Dashboard() {
 
@@ -24,7 +25,7 @@ export default function Dashboard() {
           >
             <CardInfo title="Send" iconName={"send"} />
             <CardInfo title="Withdraw" iconName={"wallet"} />
-            <CardInfo title="Pay" iconName={"home"} />
+            <OutlineCardInfo title="Pay" iconName={"home"} />
           </View>
 
           <SecondRow />

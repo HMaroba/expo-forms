@@ -10,23 +10,23 @@ type IconProps = {
 };
 
 export default function OutlineCardInfo({ iconName, title }: IconProps) {
-
-    const IconComponent = Ionicons;
+  const IconComponent = Ionicons;
   return (
-    <TouchableOpacity
+    <View
       style={{
-      
         width: "25%",
-        height: 75,
+        height: 50,
         borderRadius: 10,
         justifyContent: "center",
         alignItems: "center",
-        borderColor: 'green',
+        borderColor: "green",
         borderWidth: 2,
       }}
     >
-      <IconComponent name={iconName} size={30} color="green" />
-      <Text style={{ color: "white", fontSize: 14 , paddingTop: 2}}>{title}</Text>
-    </TouchableOpacity>
+      <IconComponent name={iconName} size={20} color="green" />
+      <Text style={{ color: "green", fontSize: 14, paddingTop: 2 }}>
+        {title}
+      </Text>
+    </View>
   );
 }
