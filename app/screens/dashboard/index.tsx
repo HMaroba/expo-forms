@@ -29,6 +29,7 @@ export default function Dashboard() {
           </View>
 
           <SecondRow />
+          <SecondRow />
         </View>
 
         <View style={{ flexDirection: "row" , marginTop: 32}}>
