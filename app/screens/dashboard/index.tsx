@@ -2,21 +2,14 @@ import { styles } from "@/styles/styles";
 import { Link, router } from "expo-router";
 import React from "react";
 import { View, TextInput, Text, TouchableOpacity } from "react-native";
-import { StyleSheet } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import Feather from "@expo/vector-icons/Feather";
-import EvilIcons from "@expo/vector-icons/EvilIcons";
 import CardInfo from "@/app/components/card";
 import SecondRow from "@/app/components/secondRow";
 import BalanceComponent from "@/app/components/balance";
 
 export default function Dashboard() {
   const insets = useSafeAreaInsets();
-  const login = () => {
-    router.push("/screens/dashboard/transactions");
-  };
   return (
     <SafeAreaProvider style={styles.container}>
       <View style={{ paddingTop: insets.top }}>
