@@ -25,7 +25,7 @@ export default function Dashboard() {
           >
             <CardInfo title="Send" iconName={"send"} />
             <CardInfo title="Withdraw" iconName={"wallet"} />
-            <OutlineCardInfo title="Pay" iconName={"home"} />
+            <CardInfo title="Pay" iconName={"home"} />
           </View>
 
           <SecondRow />
