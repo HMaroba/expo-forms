@@ -1,10 +1,12 @@
 
 import React from 'react'
+import { View , Text} from 'react-native'
 
 export default function BalanceComponent() {
   return (
-    <div>
-      
-    </div>
+    <View>
+      <Text>Available Balance</Text>
+      <Text>M2500.00</Text>
+    </View>
   )
 }
