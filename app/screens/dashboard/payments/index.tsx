@@ -1,3 +1,4 @@
+import OutlineRow from "@/app/components/outlinedRow";
 import { styles } from "@/styles/styles";
 import { Link } from "expo-router";
 import React from "react";
@@ -87,6 +88,8 @@ export default function Paymnets() {
             <Text style={{ color: "white" }}>Paid</Text>
           </TouchableOpacity>
         </View>
+
+        <OutlineRow />
 
         <View>
           <Text style={{ fontSize: 20, paddingTop: 10 }}>

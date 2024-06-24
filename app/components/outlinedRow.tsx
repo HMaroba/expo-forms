@@ -4,7 +4,7 @@ import { router } from "expo-router";
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 
-export default function ThirdRow() {
+export default function OutlineRow() {
   const login = () => {
     router.push("/screens/dashboard/transactions");
   };
