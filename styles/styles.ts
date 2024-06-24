@@ -10,10 +10,17 @@ export const styles = StyleSheet.create({
 
   container3: {
     flex: 1,
-    padding: 16,
+   
     justifyContent: "center",
     backgroundColor: 'green'
    
+  },
+
+  image: {
+    flex: 1,
+    resizeMode: 'cover',
+    padding: 16,
+    justifyContent: 'center',
   },
   container2: {
     flex: 1,
