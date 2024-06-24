@@ -32,40 +32,49 @@ import React from "react";
 import { Text, View, TouchableOpacity } from "react-native";
 
 export default function HomePage() {
-
-
   const login = () => {
     router.push("/login");
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container3}>
       <View style={{ flex: 1, justifyContent: "center" }}>
-        <Text style={{ width: "100%", fontSize: 28, textAlign: "center" }}>
+        <Text
+          style={{
+            width: "100%",
+            fontSize: 28,
+            textAlign: "center",
+            color: "white",
+          }}
+        >
           Welcome
         </Text>
       </View>
 
-      <Text style={{ fontSize: 34, fontWeight: 400, textAlign: "center" }}>
-        Everything you need to run your business
+      <Text
+        style={{
+          fontSize: 34,
+          fontWeight: 400,
+          textAlign: "center",
+          color: "white",
+        }}
+      >
+        Easy way to manage money
       </Text>
-      <Text style={{fontSize: 20, textAlign: 'center', paddingTop: 20}}>
-        This banking app offers you seemless transaction everthing is in our app
-        you are more welcome to join us now
+      <Text
+        style={{
+          fontSize: 20,
+          textAlign: "center",
+          paddingTop: 20,
+          color: "white",
+        }}
+      >
+        Lets transfer and receive your money with easy way ...
       </Text>
       <View style={{ paddingBottom: 20 }}>
-        <Link
-          href="/register"
-          style={{ fontSize: 20, textAlign: "center", marginBottom: 20 }}
-        >
-          -
-        </Link>
         <TouchableOpacity style={styles.button} onPress={login}>
           <Text style={styles.buttonText}>Get Started</Text>
         </TouchableOpacity>
-        {/* <TouchableOpacity style={styles.button} onPress={register}>
-          <Text style={styles.buttonText}>Register</Text>
-        </TouchableOpacity> */}
       </View>
     </View>
   );

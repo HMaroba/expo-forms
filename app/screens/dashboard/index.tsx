@@ -16,7 +16,7 @@ export default function Dashboard() {
       <View>
         <BalanceComponent />
  
-        <Text style={{ fontSize: 34, marginBottom: 20, marginTop: 20 }}>
+        <Text style={{ fontSize: 34, marginBottom: 20, marginTop: 20 , color: 'gray'}}>
           Find your Monetary Finese
         </Text>
 
