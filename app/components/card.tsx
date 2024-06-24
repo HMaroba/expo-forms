@@ -1,6 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
 import Feather from "@expo/vector-icons/Feather";
-import { router } from "expo-router";
 import React from "react";
 import { View, Text } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
@@ -8,17 +7,13 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 type IconProps = {
   iconName?: any;
   title: string;
-  link?: any;
 };
 
-export default function CardInfo({ iconName, title, link }: IconProps) {
-  const IconComponent = Ionicons;
-  const login = () => {
-    router.push(link);
-  };
+export default function CardInfo({ iconName, title }: IconProps) {
+
+    const IconComponent = Ionicons;
   return (
     <TouchableOpacity
-      onPress={() => login()}
       style={{
         backgroundColor: "green",
         width: "25%",
@@ -29,9 +24,7 @@ export default function CardInfo({ iconName, title, link }: IconProps) {
       }}
     >
       <IconComponent name={iconName} size={30} color="white" />
-      <Text style={{ color: "white", fontSize: 14, paddingTop: 2 }}>
-        {title}
-      </Text>
+      <Text style={{ color: "white", fontSize: 14 , paddingTop: 2}}>{title}</Text>
     </TouchableOpacity>
   );
 }
