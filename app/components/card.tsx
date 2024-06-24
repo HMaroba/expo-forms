@@ -2,6 +2,7 @@ import { Ionicons } from "@expo/vector-icons";
 import Feather from "@expo/vector-icons/Feather";
 import React from "react";
 import { View, Text } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 type IconProps = {
   iconName?: any;
@@ -12,7 +13,7 @@ export default function CardInfo({ iconName, title }: IconProps) {
 
     const IconComponent = Ionicons;
   return (
-    <View
+    <TouchableOpacity
       style={{
         backgroundColor: "green",
         width: "25%",
@@ -24,6 +25,6 @@ export default function CardInfo({ iconName, title }: IconProps) {
     >
       <IconComponent name={iconName} size={30} color="white" />
       <Text style={{ color: "white", fontSize: 14 , paddingTop: 2}}>{title}</Text>
-    </View>
+    </TouchableOpacity>
   );
 }
