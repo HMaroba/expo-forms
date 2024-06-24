@@ -10,6 +10,7 @@ import Feather from "@expo/vector-icons/Feather";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import CardInfo from "@/app/components/card";
 import SecondRow from "@/app/components/secondRow";
+import BalanceComponent from "@/app/components/balance";
 
 export default function Dashboard() {
   const insets = useSafeAreaInsets();
@@ -19,11 +20,8 @@ export default function Dashboard() {
   return (
     <SafeAreaProvider style={styles.container}>
       <View style={{ paddingTop: insets.top }}>
-        <Text style={{ fontSize: 16, fontWeight: 500, color: "green" }}>
-          Available Balance
-        </Text>
-
-        <Text style={{ fontSize: 24, fontWeight: 500 }}>M 2500.00</Text>
+        <BalanceComponent />
+ 
         <Text style={{ fontSize: 34, marginBottom: 20, marginTop: 20 }}>
           Find your Monetary Finese
         </Text>
