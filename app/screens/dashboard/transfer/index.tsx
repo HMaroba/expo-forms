@@ -1,3 +1,4 @@
+import BalanceComponent from "@/app/components/balance";
 import { styles } from "@/styles/styles";
 import { Link } from "expo-router";
 import React from "react";
