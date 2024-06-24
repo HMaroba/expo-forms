@@ -50,7 +50,7 @@ export default function HomePage() {
         Everything you need to run your business
       </Text>
       <Text style={{fontSize: 20, textAlign: 'center', paddingTop: 20}}>
-        This banking app offers you seemlesy transaction everthing is in our app
+        This banking app offers you seemless transaction everthing is in our app
         you are more welcome to join us now
       </Text>
       <View style={{ paddingBottom: 20 }}>

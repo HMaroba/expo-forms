@@ -1,18 +1,17 @@
 import { styles } from "@/styles/styles";
 import { Link, router } from "expo-router";
 import React from "react";
-import { View, TextInput, Text, TouchableOpacity } from "react-native";
+import { View, TextInput, Text } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import CardInfo from "@/app/components/card";
 import SecondRow from "@/app/components/secondRow";
 import BalanceComponent from "@/app/components/balance";
 
 export default function Dashboard() {
-  const insets = useSafeAreaInsets();
+
   return (
     <SafeAreaProvider style={styles.container}>
-      <View style={{ paddingTop: insets.top }}>
+      <View>
         <BalanceComponent />
  
         <Text style={{ fontSize: 34, marginBottom: 20, marginTop: 20 }}>

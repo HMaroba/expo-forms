@@ -7,7 +7,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-export default function Register() {
+export default function Login() {
   const insets = useSafeAreaInsets();
   const login = () => {
     router.push("/screens/dashboard");
