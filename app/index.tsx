@@ -36,8 +36,8 @@ export default function HomePage() {
     router.push("/login");
   };
 
-  //const image = {uri: 'https://static.vecteezy.com/system/resources/previews/010/945/926/non_2x/green-background-simple-flat-full-of-dimensional-lines-free-vector.jpg'};
-  const image = { uri: "https://docs.expo.dev/static/images/tutorial/background-image.png" };
+  const image = {uri: 'https://static.vecteezy.com/system/resources/previews/019/472/343/non_2x/wavy-green-pastel-background-free-vector.jpg'};
+  //const image = { uri: "https://docs.expo.dev/static/images/tutorial/background-image.png" };
   return (
     <View style={styles.container3}>
           <ImageBackground source={image} style={styles.image} >
@@ -57,7 +57,7 @@ export default function HomePage() {
       <Text
         style={{
           fontSize: 34,
-          fontWeight: 400,
+          fontWeight: 600,
           textAlign: "center",
           color: "white",
         }}
