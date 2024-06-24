@@ -7,6 +7,7 @@ import CardInfo from "@/app/components/card";
 import SecondRow from "@/app/components/secondRow";
 import BalanceComponent from "@/app/components/balance";
 import OutlineCardInfo from "@/app/components/oulineCard";
+import ThirdRow from "@/app/components/thirdRow";
 
 export default function Dashboard() {
 
@@ -29,7 +30,7 @@ export default function Dashboard() {
           </View>
 
           <SecondRow />
-          <SecondRow />
+          <ThirdRow />
         </View>
 
         <View style={{ flexDirection: "row" , marginTop: 32}}>
