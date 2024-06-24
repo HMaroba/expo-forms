@@ -20,49 +20,53 @@ export default function OutlineRow() {
         flexDirection: "row",
         justifyContent: "space-between",
         paddingTop: 20,
+        paddingBottom: 20,
       }}
     >
       <TouchableOpacity
         onPress={() => sendMoney()}
         style={{
-          backgroundColor: "green",
-          width: "25%",
-          height: 75,
-          borderRadius: 10,
+          width: "30%",
+          height: 50,
+          borderRadius: 5,
           justifyContent: "center",
           alignItems: "center",
+          borderColor: "green",
+          borderWidth: 2,
         }}
       >
-        <FontAwesome5 name="money-check" size={30} color="white" />
-        <Text style={{ color: "white", fontSize: 14 }}>Payments</Text>
+        <FontAwesome5 name="money-check" size={20} color="green" />
+        <Text style={{ color: "green", fontSize: 14 }}>Payments</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => withdrawMoney()}
         style={{
-          backgroundColor: "green",
-          width: "25%",
-          height: 75,
-          borderRadius: 10,
+          width: "30%",
+          height: 50,
+          borderRadius: 5,
           justifyContent: "center",
           alignItems: "center",
+          borderColor: "green",
+          borderWidth: 2,
         }}
       >
-        <FontAwesome5 name="wallet" size={30} color="white" />
-        <Text style={{ color: "white", fontSize: 14 }}>Savings</Text>
+        <FontAwesome5 name="wallet" size={20} color="green" />
+        <Text style={{ color: "green", fontSize: 14 }}>Savings</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => login()}
         style={{
-          backgroundColor: "green",
-          width: "25%",
-          height: 75,
-          borderRadius: 10,
+          width: "30%",
+          height: 50,
+          borderRadius: 5,
           justifyContent: "center",
           alignItems: "center",
+          borderColor: "green",
+          borderWidth: 2,
         }}
       >
-        <FontAwesome5 name="list" size={30} color="white" />
-        <Text style={{ color: "white", fontSize: 14 }}>History</Text>
+        <FontAwesome5 name="list" size={20} color="green" />
+        <Text style={{ color: "green", fontSize: 14 }}>History</Text>
         {/* <Text>Send Money</Text> */}
       </TouchableOpacity>
     </View>
